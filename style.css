@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+    --color-primario: #FFD700;
+    --color-secundario: #808080;
+   
+
+    --fuente-play :"Playfair Display", serif;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+@media(max-width:1200px){
+
+}
+:root{
+    --fuente-monserrat :"Montserrat", sans-serif;
+}
+
+.body{
+    background-color: #808080;
+    
+}
+
+.container{
+    position: absolute;
+    left: 16%;
+    width: 47%;
+    height: 100%    ;
+
+}
+.text_area{
+    
+    position: absolute;
+    top: 16%;
+    border: none;
+    font-family: var(--fuente-play);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    background-color: #808080;
+
+
+
+}
+.text_area::placeholder{
+    font-family: var(--fuente-play);
+    color: var(--color-primario);
+
+}
+
+.text_area:focus
+,.text_area:active{
+    border: none;
+}
+.container_boton{
+    position: absolute;
+   top: 85%;
+    display: flex;
+    align-items: center;
+   padding: 1%;
+   gap: 24px;
+}
+
+.boton_e{
+    width: 20.5rem;
+    height: 4.1rem;
+    border-radius: 1rem;
+    background: var(--color-primario);
+    padding:auto;
+    font-family: var(--fuente-play);
+    font-size: 24px;
+    font-weight: 700;
+    border: 2px solid #000000;
+    margin-top: 2rem;
+    gap: 8px;
+}
+.boton_d{
+    width: 20.5rem;
+    height: 4.1rem;
+    border-radius: 1rem;
+    background: var(--color-primario);
+    gap: 8px;
+    font-family: var(--fuente-play);
+    font-size: 24px;
+    font-weight: 700;
+    border: 2px solid #000000;
+    margin-top: 2rem;
+    
+}
+.boton_e:hover{
+    background-color: var(--color-secundario);
+}
+.boton_d:hover{
+    background-color: var(--color-secundario);
+}
+.condiciones_cont{
+    position: absolute;
+    top: 83%;
+    display: flex;
+    align-items: center;
+   
+}
+.cont_msn{
+    width: 28%;
+    height: 92%;
+    position: absolute;
+    left: 70%;
+    top: 4%;
+    border: 2px solid #000000;
+    border-radius: 32px;
+
+    background-color: #F8F8FF;
+    
+   
+
+}
+.imagen{
+    justify-content: center;
+    height: 32%;
+    width: 84%;
+}
+.msn_encriptado{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 16px;
+   position: absolute;
+   top: 65%;
+   width: 100%;
+    
+}
+.no_encriptado{
+    width: 60%;
+    font-family: var(--fuente-play);
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color
+}
+.msn_encriptado p{
+    width: 60%;
+    font-family: var(--fuente-play);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+
+}
+@media(max-width:768px){
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+}
