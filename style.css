@@ -1,160 +1,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-:root{
-    --color-primario: #FFD700;
-    --color-secundario: #808080;
-   
-
-    --fuente-play :"Playfair Display", serif;
-    
-}
 
 *{
     padding: 0;
     margin: 0;
-
+    
 }
 
-@media(max-width:1200px){
 
-}
 :root{
-    --fuente-monserrat :"Montserrat", sans-serif;
+    --color-fond:#445056;
 }
-
-.body{
-    background-color: #808080;
+body {
+    background-color: var(--color-fond);
+}
+.section{
+  
+    width: 83%;
+    height: calc(100vh - 91px - 72px);
+    display: flex;
+    margin: auto 40px auto auto;
+    align-items: end;
+    grid-template-columns: 2fr 1fr;
+   
+    
     
 }
+.head{
 
-.container{
-    position: absolute;
-    left: 16%;
-    width: 47%;
-    height: 100%    ;
+    width: 90%;
+    margin: auto;
+}
+
+.img_alu {
+    margin-top: 40px;
+}
+
+.container_texarea{
+    
+   display: flex;
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
+
 .text_area{
-    
-    position: absolute;
-    top: 16%;
-    border: none;
-    font-family: var(--fuente-play);
-    font-style: normal;
-    font-weight: 400;
+    width: 100%;
     font-size: 32px;
-    background-color: #808080;
-
-
-
+    border: none;
+    resize: none;
+    background-color: var(--color-fond);
+    outline: none;
+   
 }
 .text_area::placeholder{
-    font-family: var(--fuente-play);
-    color: var(--color-primario);
-
+    background-color: none;
+    color: white;
 }
-
-.text_area:focus
-,.text_area:active{
-    border: none;
-}
-.container_boton{
-    position: absolute;
-   top: 85%;
+.bot_mensa{
     display: flex;
-    align-items: center;
-   padding: 1%;
-   gap: 24px;
-}
-
-.boton_e{
-    width: 20.5rem;
-    height: 4.1rem;
-    border-radius: 1rem;
-    background: var(--color-primario);
-    padding:auto;
-    font-family: var(--fuente-play);
-    font-size: 24px;
-    font-weight: 700;
-    border: 2px solid #000000;
-    margin-top: 2rem;
-    gap: 8px;
-}
-.boton_d{
-    width: 20.5rem;
-    height: 4.1rem;
-    border-radius: 1rem;
-    background: var(--color-primario);
-    gap: 8px;
-    font-family: var(--fuente-play);
-    font-size: 24px;
-    font-weight: 700;
-    border: 2px solid #000000;
-    margin-top: 2rem;
-    
-}
-.boton_e:hover{
-    background-color: var(--color-secundario);
-}
-.boton_d:hover{
-    background-color: var(--color-secundario);
+    flex-direction: column;
 }
 .condiciones_cont{
-    position: absolute;
-    top: 83%;
+    font-size: 1rem;
+    color: white;
+}
+.container_boton{
+    margin-top: 16px;
     display: flex;
-    align-items: center;
-   
-}
-.cont_msn{
-    width: 28%;
-    height: 92%;
-    position: absolute;
-    left: 70%;
-    top: 4%;
-    border: 2px solid #000000;
-    border-radius: 32px;
-
-    background-color: #F8F8FF;
-    
-   
-
-}
-.imagen{
+    width: 100%;
+    height: 67px;
+    gap: 24px;
     justify-content: center;
-    height: 32%;
-    width: 84%;
-}
-.msn_encriptado{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   gap: 16px;
-   position: absolute;
-   top: 65%;
-   width: 100%;
+   
+   
     
 }
-.no_encriptado{
-    width: 60%;
-    font-family: var(--fuente-play);
-    font-weight: 700;
-    font-size: 24px;
-    text-align: center;
-    color
-}
-.msn_encriptado p{
-    width: 60%;
-    font-family: var(--fuente-play);
-    font-weight: 400;
+.boton_e{
+    height: 100%;
+    width: 40%;
+    border-radius: 24px;
     font-size: 16px;
-    text-align: center;
+    font-weight: 400;
 
+}
+.boton_d{
+    height: 100%;
+    width: 40%;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+.container_imgmsn{
+    background-color: #B8CFDA;
+  
+    width: 40%;
+    height: calc(100% + 48px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 32px;
+    
+
+}
+.muñeco{
+    width: 100%;
 }
 @media(max-width:768px){
-    .container{
-        display: flex;
-        flex-direction: row;
+    .section{
+       
+        flex-direction: column;
+       justify-content: center;
+        margin: auto;
+        height: 100%;
+        width: 90%;
+       
     }
-}
+    .container_imgmsn{
+        width: 100%;
+    }
+    .container_texarea{
+        width: 100%;
+    }
+ }

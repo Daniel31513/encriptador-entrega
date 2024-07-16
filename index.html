@@ -7,33 +7,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="body">
-    <header></header>
-    <main>
+    <header>
+         
+        <img class="img_alu" src="Vector.png"></img>
+    </div>
+    </header>
+    <main class="main">
 
-        <section>
+        <section class="section">
           
-                
             
-            <div class="container">
+            
                 <div class="container_texarea">
+                    <div>
                     <textarea name="texto" class="text_area" id="men_saje" cols="30" rows="10" placeholder="Ingrese texto aqui"></textarea>
-                    </div>
+                  </div>
+                  <div class="bot_mensa"> 
                     <div class="condiciones_cont"><p class="condiciones">Solo letras minusculas y sin acentos</p></div>
 
                  <div class="container_boton">
+                    
                     <button onclick="encriptar();" class="boton_e" id="encr">Encriptar</button>
                      <button onclick="desencriptar();" class="boton_d" id="desencr">Desencriptar</button>
                  </div>
+                </div> 
 
                 </div>
-                <div class="cont_msn">
-                    <div class="imagen">
-                    <img src="Muñeco.png" alt="" id="muñe">
-                    </div>
+                <div class="container_imgmsn">
+                    
+                    <img class="muñeco" src="Muñeco.png" alt="" id="muñe">
+                    
                     <div class="msn_encriptado">
                     <h2  class="no_encriptado" id="msn_ini">Ningun mensaje fue encontrado</h2>
                     <p id="parr">Ingresa el texto que desees encriptar o desencriptar.</p>
-                    
+                    <button onclick="copiar();" class="bot_copiar" id="cop_bot">Copiar</button>
                  </div>
                 </div>
             
